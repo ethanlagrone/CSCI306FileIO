@@ -1,5 +1,8 @@
 package part1;
 
-public class ScoreTrakker {
+import java.util.ArrayList;
 
+public class ScoreTrakker {
+	private ArrayList<Student> students = new ArrayList<Student>();
+	
 }
