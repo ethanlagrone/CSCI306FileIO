@@ -14,7 +14,7 @@ public class Student implements Comparable<Student>{
 	//toString implementation
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", score=" + score + "]";
+		return name + " " + score;
 	}
 	
 	

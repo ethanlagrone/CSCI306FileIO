@@ -8,16 +8,25 @@ import java.util.Scanner;
 
 public class ScoreTrakker {
 	private ArrayList<Student> students = new ArrayList<Student>();
+	private String[] files = {"scores.txt", "badscore.txt", "nofile.txt" };
 	
 	public void loadDataFile(String filename) throws FileNotFoundException {
+		String line = "";
 		FileReader reader = new FileReader(filename);
 		Scanner in = new Scanner(reader);
-		while (in.hasNext()) {
-			String name = in.nextLine();     
-			int score = Integer.parseInt(in.nextLine());   
-		    students.add(new Student(name, score));
+		while (in.hasNextLine()) {
+			//catch the format exception and print the problem line
+			try {
+				String name = in.nextLine();     
+				line = name;
+				int score = Integer.parseInt(in.nextLine());   
+			    students.add(new Student(name, score));
+			} catch (NumberFormatException e) {
+	            System.out.println("\nBad format found here: " + line + ". In this file: " + filename + ".\n");
+	        }
+			
 		}
-		in.close();
+		in.close(); 
 	}
 	
 	public void printInOrder() {
@@ -25,16 +34,25 @@ public class ScoreTrakker {
 		for(Student s : students) {
 			System.out.println(s);
 		}
+		students.clear();
 	}
 	
-	public void processFiles() throws FileNotFoundException {
-		loadDataFile("scores.txt");
-		printInOrder();
+	public void processFiles(String filename) throws FileNotFoundException {
+		//catch fileNotFound exception
+		try {
+			loadDataFile(filename);
+			printInOrder();
+		} catch(FileNotFoundException e) {
+			System.out.println("\n" + filename + ": this file was not found. \n");
+		}
+		
 	}
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		ScoreTrakker tracker = new ScoreTrakker();
-	    tracker.processFiles();
+		for (String f : tracker.files) {  
+			tracker.processFiles(f);
+	    }
 		
 	}
 }
