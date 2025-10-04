@@ -24,7 +24,7 @@ public class ScoreTrakker {
 				int intScore = Integer.parseInt(score);
 			    students.add(new Student(name, intScore));
 			} catch (NumberFormatException e) {
-	            System.out.println("\nIncorrect format for " + line + "not a valid score: " +score+ "\n");
+	            System.out.println("\nIncorrect format for " + line + " not a valid score: " +score+ "\n");
 	        }
 			
 		}
