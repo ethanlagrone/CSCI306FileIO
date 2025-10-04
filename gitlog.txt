@@ -1,0 +1,77 @@
+I, Sedona Szczepaniak, certify that I participated equitably in the creation of assignment C10A File IO (LO8 - Pair), dated 2025.
+I, Ethan Lagrone, certify that I participated equitably in the creation of this assignment C10A File IO (LO8 - Pair), dated 2025.
+
+commit 56fc0013f6b2a5f2dad890cd20b9da41e35fad9a
+Author: 1123581321345589144233377610987 <123220105+1123581321345589144233377610987@users.noreply.github.com>
+Date:   Fri Oct 3 21:33:40 2025 -0600
+
+    Update ScoreTrakker.java
+    
+    Changed some formatting with placement of newlines
+
+commit 9f010a32b27ab1cbbc3e8e3da451d8855665fea2
+Author: 1123581321345589144233377610987 <123220105+1123581321345589144233377610987@users.noreply.github.com>
+Date:   Fri Oct 3 21:31:41 2025 -0600
+
+    Update ScoreTrakker.java
+    
+    Added line signifying start of student score list
+
+commit e12184711e74d219f1bfdfb2b3b79f98e267a489
+Author: 1123581321345589144233377610987 <123220105+1123581321345589144233377610987@users.noreply.github.com>
+Date:   Fri Oct 3 19:43:42 2025 -0600
+
+    Update ScoreTrakker.java
+    
+    Fixed typo in error message
+
+commit 73c28ec84f786cc416f37f29b65f6818d7f9e1e2
+Author: 1123581321345589144233377610987 <123220105+1123581321345589144233377610987@users.noreply.github.com>
+Date:   Fri Oct 3 19:43:22 2025 -0600
+
+    Update ScoreTrakker.java
+    
+    Fixed error message and handling for non numerical scores
+
+commit 06b4c9cdc0ded3d50c778eda1eb9038a0b14cc40
+Author: ethanlagrone <ethan_lagrone@mines.edu>
+Date:   Tue Sep 30 17:25:40 2025 -0600
+
+    Version 1 of part 2, added trys and catches
+
+commit e5ded84cdcec0b10cdbeece26f010e948f66d899
+Author: ethanlagrone <ethan_lagrone@mines.edu>
+Date:   Tue Sep 30 16:07:22 2025 -0600
+
+    Finished part 1
+
+commit f9633e74a7988836179a3832caf293aebf101574
+Author: ethanlagrone <ethan_lagrone@mines.edu>
+Date:   Tue Sep 30 15:10:38 2025 -0600
+
+    Stub functions for ScoreTrakker
+
+commit 74f5a7a2afc8a9f9afed99067c46a2316bf126f8
+Author: ethanlagrone <ethan_lagrone@mines.edu>
+Date:   Tue Sep 30 15:06:21 2025 -0600
+
+    Implemented student
+
+commit a47809694d28c5c65784b545d234221f9f2e84d0
+Merge: 970d101 181bc94
+Author: ethanlagrone <ethan_lagrone@mines.edu>
+Date:   Tue Sep 30 14:00:50 2025 -0600
+
+    Merge branch 'main' of https://github.com/ethanlagrone/CSCI306FileIO
+
+commit 970d1010094c40cb80cae6f5d8cbef4b2a5fe70e
+Author: ethanlagrone <ethan_lagrone@mines.edu>
+Date:   Tue Sep 30 13:58:28 2025 -0600
+
+    Starting the repo
+
+commit 181bc9417782633a29c597e99dbbe74e20ddf13d
+Author: ethanlagrone <ethan_lagrone@mines.edu>
+Date:   Tue Sep 30 13:56:12 2025 -0600
+
+    Initial commit
