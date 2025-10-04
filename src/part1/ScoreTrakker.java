@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class ScoreTrakker {
 	private ArrayList<Student> students = new ArrayList<Student>();
 	private String[] files = {"scores.txt", "badscore.txt", "nofile.txt" };
-	
+
 	public void loadDataFile(String filename) throws FileNotFoundException {
 		String line = "";
 		FileReader reader = new FileReader(filename);
@@ -32,6 +32,7 @@ public class ScoreTrakker {
 	}
 	
 	public void printInOrder() {
+		System.out.println("Student Score List");
 		Collections.sort(students);
 		for(Student s : students) {
 			System.out.println(s);
