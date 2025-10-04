@@ -14,15 +14,17 @@ public class ScoreTrakker {
 		String line = "";
 		FileReader reader = new FileReader(filename);
 		Scanner in = new Scanner(reader);
+		String score= new String();
 		while (in.hasNextLine()) {
 			//catch the format exception and print the problem line
 			try {
 				String name = in.nextLine();     
 				line = name;
-				int score = Integer.parseInt(in.nextLine());   
-			    students.add(new Student(name, score));
+				score=in.nextLine();
+				int intScore = Integer.parseInt(score);
+			    students.add(new Student(name, intScore));
 			} catch (NumberFormatException e) {
-	            System.out.println("\nBad format found here: " + line + ". In this file: " + filename + ".\n");
+	            System.out.println("\nIncorrect format for " + line + "not a valid score: " +score+ "\n");
 	        }
 			
 		}
